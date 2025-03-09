@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+            <div class="unit-toggle">
+                <button id="celsius" class="active">°C</button>
+                <button id="fahrenheit">°F</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="current-weather" id="current-weather">
+                <!-- Current weather will be inserted here -->
+            </div>
+
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast will be inserted here -->
+            </div>
+
+            <div class="ml-prediction" id="ml-prediction">
+                <h2>AI Weather Prediction</h2>
+                <p class="prediction-note">Based on historical patterns</p>
+                <div class="prediction-container" id="prediction-container">
+                    <!-- ML predictions will be inserted here -->
+                </div>
+                <button id="get-prediction">Generate AI Prediction</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data provided by OpenWeather API</p>
+            <p>© 2025 Weather App</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
